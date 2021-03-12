@@ -1,0 +1,31 @@
+{
+  "name": "workshop-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && copyfiles -f src/index.html build",
+    "start": "http-server build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isisbusapps/docker-workshop-frontend.git"
+  },
+  "author": "mr-field",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/isisbusapps/docker-workshop-frontend/issues"
+  },
+  "homepage": "https://github.com/isisbusapps/docker-workshop-frontend#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "css-loader": "^5.1.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
