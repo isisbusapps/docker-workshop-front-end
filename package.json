@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack && copyfiles -f src/index.html build",
-    "start": "http-server build"
+    "start": "http-server --port 80 build"
   },
   "repository": {
     "type": "git",
