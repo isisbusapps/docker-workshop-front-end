@@ -1,7 +1,8 @@
 import "./style.css"
 
 async function getLatestProposals() {
-  return fetch("http://localhost:5000/latest-proposals")
+  const backendUrl = "http://" + window.location.hostname + ":5000/latest-proposals"
+  return fetch(backendUrl)
     .then(result => result.json());
 }
 
